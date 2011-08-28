@@ -45,7 +45,13 @@ CREATE TABLE participated
 
 
 ======================================
-
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	INSERT INTO person VALUES('&driverid','&name','&address');
+	INSERT INTO car VALUES('&regno','&model','&year');
+	INSERT INTO accident VALUES('&reportno','&date1','&location');
+	INSERT INTO owns VALUES('&driverid','&regno');
+	INSERT INTO participated VALUES('&driverid','&regno','&reportno','&damages');
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 	INSERT INTO person VALUES (1,'House','Carolina');
 	INSERT INTO person VALUES (2,'Dexter','Hampshire');
