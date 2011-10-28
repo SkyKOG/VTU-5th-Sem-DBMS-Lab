@@ -1,18 +1,17 @@
+CREATE TABLE customer
+(
+ 	custname VARCHAR2(10),
+	street VARCHAR2(10) not null,
+	city VARCHAR2(10) not null,
+	CONSTRAINT pk_cusnmecus PRIMARY KEY(custname)
+);
+
 CREATE TABLE branch
 (
 	branchname VARCHAR2(10),
 	city VARCHAR2(10),
 	assets REAL,
 	CONSTRAINT pk_brnamebr PRIMARY KEY(branchname)
-);
-
-CREATE TABLE customer
-(
-	custname VARCHAR2(10),
-	street VARCHAR2(10) NOT NULL,
-	city VARCHAR2(10) NOT NULL,
-	CONSTRAINT pk_cusnmecus PRIMARY KEY(custname)
-	
 );
 
 CREATE TABLE account
@@ -61,11 +60,6 @@ INSERT INTO depositor VALUES('&custname','&accno');
 INSERT INTO borrower VALUES('&custname','&loanno');
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-INSERT INTO branch VALUES('Children','Nagpur',1200000); 
-INSERT INTO branch VALUES('Main','Chennai',2000000);
-INSERT INTO branch VALUES('Regional','Mumbai',330000);
-INSERT INTO branch VALUES('Farmer','Hyderabad',555555);
-INSERT INTO branch VALUES('District','Nagpur',9999999);
 
 INSERT INTO customer VALUES('Ted','Dharampet','Nagpur');
 INSERT INTO customer VALUES('Robin','Sadar','Nagpur');
@@ -73,6 +67,13 @@ INSERT INTO customer VALUES('Barney','Palce road','Chennai');
 INSERT INTO customer VALUES('Lily','Street','Delhi');
 INSERT INTO customer VALUES('Marshall','Miramar','Mumbai');
 INSERT INTO customer VALUES('Zoey','Jewel','Hyderabad');
+
+
+INSERT INTO branch VALUES('Children','Nagpur',1200000); 
+INSERT INTO branch VALUES('Main','Chennai',2000000);
+INSERT INTO branch VALUES('Regional','Mumbai',330000);
+INSERT INTO branch VALUES('Farmer','Hyderabad',555555);
+INSERT INTO branch VALUES('District','Nagpur',9999999);
 
 INSERT INTO  account VALUES(1,'Children',25000);
 INSERT INTO  account VALUES(2,'Main',12000);
